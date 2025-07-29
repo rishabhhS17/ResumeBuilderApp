@@ -10,7 +10,7 @@ import { protect } from "../middlewares/authMiddleware.js";
 import { uploadResumeImages } from "../controllers/uploadImages.js";
 
 const router = express.Router();
-
+//route
 router.post("/", protect, createResume);
 router.get("/", protect, getUserResumes);
 router.get("/:id", protect, getResumeById);
