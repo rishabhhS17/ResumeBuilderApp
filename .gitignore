@@ -1,0 +1,52 @@
+#############################
+#  General – operating-system
+#############################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+
+#############################
+#  Node / npm / yarn / pnpm
+#############################
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+#############################
+#  Environment variables
+#############################
+.env
+.env.*
+# (keeps credentials, API keys, etc. out of version control)
+
+#############################
+#  Build / output artefacts
+#############################
+# Vite / React
+frontend/dist/
+# Generic
+dist/
+build/
+coverage/
+
+#############################
+#  Runtime & user-generated data
+#############################
+backend/uploads/
+uploads/
+
+#############################
+#  IDE / editor files
+#############################
+.idea/
+.vscode/
+*.iml
+
+#############################
+#  OS-generated files
+#############################
+*.orig
+*.tmp
