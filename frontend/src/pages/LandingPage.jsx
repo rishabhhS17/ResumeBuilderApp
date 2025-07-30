@@ -145,7 +145,7 @@ const LandingPage = () => {
                 </button>
               </div>
 
-              {/* Stats */}
+              {/* Stats
               <div className={landingPageStyles.statsContainer}>
                 {[
                   { value: '50K+', label: 'Resumes Created', gradient: 'from-violet-600 to-fuchsia-600' },
@@ -158,7 +158,7 @@ const LandingPage = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Right Content - SVG Illustration */}
             <div className={landingPageStyles.heroIllustration}>
@@ -311,12 +311,7 @@ const LandingPage = () => {
       {/* Footer */}
       <footer className={landingPageStyles.footer}>
         <div className={landingPageStyles.footerContainer}>
-          <p className={landingPageStyles.footerText}>
-            Crafted with <span className={landingPageStyles.footerHeart}>❤️</span> by{' '}
-            <a href="https://hexagondigitalservices.com" target="_blank" className={landingPageStyles.footerLink}>
-              Hexagon Digital Services
-            </a>
-          </p>
+          
         </div>
       </footer>
 
