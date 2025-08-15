@@ -158,7 +158,8 @@ const LandingPage = () => {
                   </div>
                 ))}
               </div>
-            </div> */}
+            */}
+              </div> 
 
             {/* Right Content - SVG Illustration */}
             <div className={landingPageStyles.heroIllustration}>

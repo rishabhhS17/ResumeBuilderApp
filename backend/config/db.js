@@ -1,9 +1,19 @@
 import mongoose from "mongoose";
 
 export const connectDB = async () => {
-    await mongoose.connect('')
-        .then(() => console.log("DB CONNECTED"));
-}
+  try {
+    const uri = process.env.MONGO_URI.trim(); // Add trim() to remove any whitespace
+   
+
+    const connection = await mongoose.connect(uri);
+    console.log("MongoDB Connected:", connection.connection.host);
+  } catch (error) {
+    console.error("MongoDB Connection Error:", error);
+    process.exit(1);
+  }
+};
+
+// export default connectDB;
 
 // STEPS TO GET YOUR MONGODB ATLAS USERNAME & PASSWORD:
 //
